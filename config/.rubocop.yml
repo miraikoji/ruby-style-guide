@@ -55,3 +55,7 @@ Bundler/OrderedGems:
 # 文字列は基本的にシングルクォート
 Style/StringLiterals:
   EnforcedStyle: single_quotes
+
+# migrationやschemaでエラー出るのでチェックしないでOK
+Style/SingleSpaceBeforeFirstArg:
+  Enabled: false
