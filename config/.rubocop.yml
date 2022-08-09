@@ -1,0 +1,57 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7.6
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+
+# frozen警告をオフに
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+# コメントの日本語を許可
+Style/AsciiComments:
+  Enabled: false
+
+# 明示的に else で nil を返すのはわかりやすいので許可
+Style/EmptyElse:
+  EnforcedStyle: empty
+
+# 1行メソッド見づらいのですべて広げる書き方に統一
+Style/EmptyMethod:
+  EnforcedStyle: expanded
+
+# 明示的にselfを書くのは分かりやすいので許可
+Style/RedundantSelf:
+  Enabled: false
+
+# 引数が改行してる時のみカンマをつける
+Style/TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+
+# hashで改行してる時のみ、最終行カンマをつける
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+# arrayで改行してる時のみ、最終行にカンマをつける
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+
+# ドキュメントの無い public class を許可する
+Style/Documentation:
+  Enabled: false
+
+# is_とかhas_は自分で定義するので許可
+Naming/PredicateName:
+  Enabled: false
+
+# 引数名は自由につけさせてほしいので許可
+Naming/MethodParameterName:
+  Enabled: false
+
+# Gemfileの順番は気にしなくてOK
+Bundler/OrderedGems:
+  Enabled: false
+
+# 文字列は基本的にシングルクォート
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
