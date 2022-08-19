@@ -57,5 +57,5 @@ Style/StringLiterals:
   EnforcedStyle: single_quotes
 
 # migrationやschemaでエラー出るのでチェックしないでOK
-Style/SingleSpaceBeforeFirstArg:
+Layout/SpaceBeforeFirstArg:
   Enabled: false
