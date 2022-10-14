@@ -59,3 +59,7 @@ Style/StringLiterals:
 # migrationやschemaでエラー出るのでチェックしないでOK
 Layout/SpaceBeforeFirstArg:
   Enabled: false
+
+# classとかmoduleはAPI::V1::Foo:Barとか書くので
+ClassAndModuleChildren:
+  EnforcedStyle: compact
