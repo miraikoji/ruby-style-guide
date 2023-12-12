@@ -63,3 +63,26 @@ Layout/SpaceBeforeFirstArg:
 # classとかmoduleはAPI::V1::Foo:Barとか書くので
 ClassAndModuleChildren:
   EnforcedStyle: compact
+
+# ABCサイズ
+# 代入（Assignment）, 分岐（Branch）, 条件式（Condition）のスコアの合計
+# いい塩梅がわからないのでとりあえず様子見ながら調整
+Metrics/AbcSize:
+  Max: 35
+
+# クラスの行数
+Metrics/ClassLength:
+  Enabled: false
+
+# 関数の行数
+Metrics/MethodLength:
+  Max: 50
+
+# １行の文字数
+Layout/LineLength:
+  Max: 255
+
+# ブロックの行数
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*' # Specはブロックが長くなりがちなので除外する
