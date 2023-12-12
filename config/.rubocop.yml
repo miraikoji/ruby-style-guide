@@ -86,3 +86,8 @@ Layout/LineLength:
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*' # Specはブロックが長くなりがちなので除外する
+
+# 引数の数
+Metrics/ParameterLists:
+  MaxOptionalParameters: 5
+  Max: 5
